@@ -57,7 +57,7 @@ exports.buscarLivroPorId = async (req, res) => {
 
 // Atualizar um livro por ID
 exports.atualizarLivro = async (req, res) => {
-   //    return req.params.id;
+   //    return req.params.[id];
   try {
       // Busca o livro pelo ID
       const livro = await Livro.findById(req.params.id);
